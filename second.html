@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url("SPACE.jpg");
+  align-items: center;
+text-align: center;
+}
+* {box-sizing: border-box;}
+.tamil{
+  display: flex;
+        justify-content: space-evenly;
+}
+.vedan{
+  display: flex;
+        justify-content: space-evenly;
+}
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+ 
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(256, 256, 256);
+  /* Black see-through */
+  color:black; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+  <h2 style="color:white;">INTRODUCTION TO SPACE DEBRIS</h2>
+  <video width="1200" height="500" controls>
+    <source src="VIDEO.mp4" type="video/mp4">
+    <source src="VIDEO.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+
+<h2 style="color:white;">TYPES OF DEBRIS</h2>
+<p style="color:white;">HOVER OVER THE DEBRIS TO SEE THE EFFECT</p>
+<div class="tamil">
+<div class="container">
+  <img src="pics/db1.png" alt="Avatar" class="image">
+  <div class="overlay">I am waste sattilite</div>
+</div>
+<div class="container">
+  <img src="pics/db2.png" alt="Avatar" class="image">
+  <div class="overlay">I am a rocket </div>
+</div>
+<div class="container">
+  <img src="pics/db3.png" alt="Avatar" class="image">
+  <div class="overlay">I am meteroids</div>
+</div>
+</div>
+<div class="vedan">
+<div class="container">
+  <img src="pics/db4.png" alt="Avatar" class="image">
+  <div class="overlay">I am fuel tanks</div>
+</div>
+<div class="container">
+  <img src="pics/db5.png" alt="Avatar" class="image">
+  <div class="overlay">I am particles of sattelite</div>
+</div>
+</div>
+
+<button onclick="myFunction()">NEXT</button>
+
+
+<script>
+function myFunction() {
+  location.replace("home.html")
+}
+</script>
+
+</body>
+</html>
+
